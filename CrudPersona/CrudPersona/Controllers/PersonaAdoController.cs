@@ -103,6 +103,9 @@ namespace CrudPersona.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(PersonaModel persona)
         {
+
+            /*AGREGANDO COMENTARIO EN EL METODO DE INSERTAR*/
+
             var query = """
             INSERT INTO persona
             (tipo_documento, fecha_nacimiento, numero_documento, nombres,
